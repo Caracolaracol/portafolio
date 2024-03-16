@@ -1,0 +1,63 @@
+---
+import NavBar from "../../molecules/NavBar";
+import NavBarMobile from "../../molecules/NavBar/NavBarMobile";
+import {getLangFromUrl} from "../../../i18n/utils"
+import maripn from "../../../assets/images/buttons/maripn.png";
+import marip from "../../../assets/images/buttons/marip.png";
+import ChangeLanguage from "../../molecules/NavBar/ChangeLanguage";
+import ImagesLanguage from "../../molecules/NavBar/ImagesLanguage";
+import ChangeTheme from "../../molecules/NavBar/ChangeTheme"
+let pathname = Astro.url.pathname;
+const lang = getLangFromUrl(Astro.url);
+---
+
+<div id="header" class="tablet:w-screen fixed z-10 w-[99vw]">
+    
+    <header class="dark:bg-dark bg-snow border-timberwolf dark:border-timberwolf tablet:mr-6 tablet:ml-[2%] laptop:ml-[27vw] desktop:ml-[23rem] mx-2 flex flex-row items-center justify-between border-b-[1px] border-opacity-50 dark:border-opacity-70 h-[71px]"
+    >
+        <div class="laptop:ml-12 laptop:invisible z-[99] ml-2">
+            <a href="/">
+                <img
+                    src="/logo.png"
+                    class="tablet:w-[5.5rem] transition-opacity-1 z-[99] w-20 drop-shadow-md"
+                    alt="caracol"
+                />
+            </a>
+        </div>
+        <div class="tablet:mr-4 laptop:flex hidden h-full">
+            <nav class="laptop:max-w-[18rem] laptop:min-w-[15rem] z-50 flex items-center">
+                <NavBar client:load pathname={pathname} language={lang} />
+            </nav>
+            <div class="border-l-timberwolf dark:border-l-timberwolf mx-4 flex max-h-[3rem] min-h-[3rem] items-center self-center border-l-[1px] border-opacity-50 dark:border-opacity-70"></div>
+            
+            <div class="flex min-w-[8.2rem] flex-row justify-between gap-1 h-[70px]">
+                <a href={"/"} class="flex w-[3.6rem] cursor-pointer flex-col items-center justify-center">
+                    <div class="h-[38px]">
+                        <ImagesLanguage client:load language={lang}/>
+                    </div>
+                    <ChangeLanguage client:load language={lang} />
+                </a>
+                <div class="flex w-[4rem] cursor-pointer flex-col items-center justify-center">
+                    <div class="h-[38px]">
+                        <img
+                        src={maripn.src}
+                        alt="luciernaga"
+                        class={`h-auto w-[2.7rem] dark:hidden cursor-pointer`}
+                        />
+                        <img
+                        src={marip.src}
+                        alt="abeja"
+                        class={`h-auto w-[2.7rem] hidden dark:block cursor-pointer`}
+                        />
+                    </div>
+                    <ChangeTheme client:load/>
+                </div>
+            </div>
+        </div>
+        <div class="laptop:hidden flex">
+            <div class="laptop:hidden transition-opacity-1 flex flex-row">
+                <NavBarMobile client:load  pathname={pathname} language={lang}/>
+            </div>
+        </div>
+    </header>
+</div>

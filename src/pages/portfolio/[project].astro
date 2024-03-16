@@ -1,0 +1,126 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import { pageControl, type ProjectData } from "../api/proyects";
+import { getProjects } from "../api/proyects";
+import ProjectTitleSection from "../../components/organisms/ProjectTitleSection";
+import ProjectImages from "../../components/molecules/ProjectImages";
+import ProjectContent from "../../components/molecules/ProjectContent";
+import type { App } from "../api/proyects";
+import type { Video } from "../api/proyects";
+import type { Art } from "../api/proyects";
+
+export function getStaticPaths() {
+    return [
+        { params: { project: "languagespin" } },
+        { params: { project: "ironplantcl" } },
+        { params: { project: "giftoky" } },
+        { params: { project: "torchnd" } },
+        { params: { project: "bichos" } },
+        { params: { project: "cruzandorios" } },
+        { params: { project: "lacenaestalista" } },
+        { params: { project: "quebradaradiocontrol" } },
+        { params: { project: "asambleadejueces" } },
+        { params: { project: "music" } },
+        { params: { project: "art" } },
+        { params: { project: "photography" } },
+    ];
+}
+
+let { project } = Astro.params;
+
+let projectsData: ProjectData = {
+    allProjectsDataArray: [{} as App | Video | Art],
+    projectData: {} as App | Video | Art,
+    projectFound: {} as App | Video | Art,
+    indexOfProject: undefined,
+    previousProject: {},
+    nextProject: {},
+    lastArrayIndex: undefined,
+    projectType: "",
+};
+let idPreviousProject;
+let idNextProject;
+let projectData = projectsData.projectData;
+await getProjects(project).then(async (res) => {
+    projectsData = res;
+    await pageControl(res).then(async (res) => {
+        idPreviousProject = res.idPreviousProject;
+        idNextProject = res.idNextProject;
+    });
+});
+
+let pathname = Astro.url.pathname;
+---
+
+<MainLayout title="Caracolaracol | Portfolio">
+    <section class="w-[100%]">
+        <div>
+            <div class="absolute top-0 left-0 h-2 w-2"></div>
+            <ProjectTitleSection
+                client:load
+                name={projectsData.projectData.name}
+                nameES={projectsData?.projectData?.nameES}
+                idPreviousProject={idPreviousProject}
+                idNextProject={idNextProject}
+                pathname={pathname}
+            />
+            <div class="mx-auto w-[97%]">
+                {
+                    projectData != undefined ? (
+                        <ProjectImages images={projectData.images} />
+                    ) : null
+                }
+            </div>
+            <div class="min-w-full h-2"></div>
+            <div class="flex flex-col tablet:min-h-[21rem] laptop:min-h-[12rem] bg-blancod bg-opacity-40 dark:bg-negron dark:bg-opacity-90 rounded-tr-sm rounded-br-sm p-4 tablet:pb-8">
+                <div class="desktop:min-h-[9rem] transitionshort laptop:px-[5%] desktop:px-[2vw] pb-4">
+                    <div class="hidden tablet:block desktop:text-left">
+                        {
+                            projectData.illustrations ? (
+                                <img
+                                    alt="ilustration"
+                                    width="640"
+                                    height="640"
+                                    src={`/images${projectData.illustrations}`}
+                                    class="w-[60vw] m-auto tablet:w-[18rem] tablet:float-right  laptop:ml-4 svg laptop:mr-5"
+                                />
+                            ) : (
+                                ""
+                            )
+                        }
+                    </div>
+                    <ProjectContent client:only description={projectsData.projectData.description}/>
+                    <div class="desktop:text-left tablet:hidden">
+                        {
+                            projectData.illustrations ? (
+                                <img
+                                    alt="ilustration"
+                                    width="640"
+                                    height="640"
+                                    src={`/images${projectData.illustrations}`}
+                                    class="w-[60vw] m-auto tablet:w-[18rem] tablet:float-right  laptop:ml-4 svg laptop:mr-5"
+                                />
+                            ) : (
+                                ""
+                            )
+                        }
+                    </div>
+                </div>
+                <p class="text-[1rem] font-tommyregular font-bold tracking-wider antialiased laptop:px-[5%] desktop:px-[2vw]">
+                    {projectData.opinion}
+                </p>
+                <div class="border-b-[1px] border-verde dark:border-blancod border-opacity-40 dark:border-opacity-10 mt-4 mb-4 desktop:mt-6 desktop:mb-6 w-[80%] flex mx-auto">
+                </div>
+                <!-- <TechAndLinks
+                    isCoding={true}
+                    tech={projectData.technologies
+                        ? projectData.technologies
+                        : []}
+                    github={projectData.github}
+                    link={projectData.link}
+                /> -->
+            </div>
+        </div>
+        <div class="mt-4 mb-4 desktop:mt-6 desktop:mb-6 flex mx-auto"></div>
+    </section>
+</MainLayout>

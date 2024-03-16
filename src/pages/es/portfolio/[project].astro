@@ -1,0 +1,56 @@
+---
+import MainLayout from "../../../layouts/MainLayout.astro";
+
+export function getStaticPaths() {
+  return [
+    {params: {project: 'languagespin'}},
+    {params: {project: 'ironplantcl'}},
+    {params: {project: 'obsidian'}},
+    {params: {project: 'torchnd'}},
+    {params: {project: 'bichos'}},
+    {params: {project: 'cruzandorios'}},
+    {params: {project: 'lacenaestalista'}},
+    {params: {project: 'quebradaradiocontrol'}},
+    {params: {project: 'asambleadejueces'}},
+    {params: {project: 'music'}},
+    {params: {project: 'art'}},
+    {params: {project: 'photography'}},
+  ];
+}
+
+let {project} = Astro.params
+
+---
+<MainLayout title="Caracolaracol | Portfolio">
+    <section class='w-[100%]'>
+        <div>
+            <div class="absolute top-0 left-0 h-2 w-2">
+            </div>
+            {project}
+            <!--  <Title name={data.projectData.name} nameES={data.projectData.nameES} idPreviousProject={idPreviousProject} idNextProject={idNextProject}/>
+                {
+                    (data.projectType == FICTIONAL_WEBSITES || data.projectType == REAL_WEBSITES) && <Websites projectData={data.projectData} />
+                }  
+                {
+                    data.projectType == CODING && <Code projectData={data.projectData} />
+                }  
+                {
+                    data.projectType == APPS && <Apps projectData={data.projectData} />
+                }
+                {
+                    data.projectType == VIDEOS && <Videos projectData={data.projectData} />
+                }
+                {
+                    data.projectType == MUSIC && <Music projectData={data.projectData} />
+                }
+                {
+                    data.projectType == ARTS && <Art projectData={data.projectData} />
+                }
+                {
+                    data.projectType == MACRO && <MacroPhotography projectData={data.projectData} />
+                } -->
+            </div>
+            <div class=" mt-4 mb-4 desktop:mt-6 desktop:mb-6 flex mx-auto">
+            </div>
+        </section>
+    </MainLayout>

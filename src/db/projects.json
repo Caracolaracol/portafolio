@@ -1,0 +1,361 @@
+{
+    "web": [
+        {
+            "id": "languagespin",
+            "name": "Language Spin",
+            "nameES": "Language Spin",
+            "category":"web",
+            "projectType": "real websites",
+            "description": "This is a language course platform, I worked at this project as a team made up of the best students of the latest bootcamps of web development and web design at 'Coderhouse' an e-learning platform based in Argentina, so it was a excelent job experience and the result was this site made for a language course institute. They teach English, Spanish, Italian and Portuguese",
+            "descriptionES": "Language Spin es una plataforma de cursos de idiomas, trabajé en este proyecto en un equipo conformado por los mejores estudiantes de los últimos bootcamps de desarrollo web y diseño de Coderhouse, una plataforma de e-learning de Argentina. Fué una excelente experiencia laboral cuyo resultado fue este sitio hecho para este instituto de idiomas donde enseñan Inglés, Español, Italiano y Portugués.",
+            "opinion": "Grazie mille!",
+            "opinionES": "Grazie mille!",
+            "images": [
+                "/project-images/ls1.png",
+                "/project-images/ls2.png",
+                "/project-images/ls3mobile.png",
+                "/project-images/ls4mobile.png"
+            ],
+            "imagesmobile": [
+                "/imagecarousel/lsmob1.png",
+                "/imagecarousel/lsmob2.png"
+            ],
+            "github": "https://github.com/Caracolaracol/languageSpin-project",
+            "link": "https://language-spin.vercel.app/",
+            "technologies": [
+                {
+                    "idtech": "react",
+                    "name": "React JS",
+                    "img": "/icons/react.svg",
+                    "description": "One library to rule them all"
+                },
+                {
+                    "idtech": "reactrouter",
+                    "name": "React Router",
+                    "img": "/icons/reactrouter.svg",
+                    "description": "Routing tool for React, I used it with the new updates (since 6.4v) and its awesome"
+                },
+                {
+                    "idtech": "tailwind",
+                    "name": "Tailwind CSS",
+                    "img": "/icons/tailwind.svg",
+                    "description": "My favorite CSS Framework, It is just awesome"
+                }
+            ]
+        },
+        {
+            "id": "ironplantcl",
+            "name": "Ironplant.cl",
+            "nameES": "Ironplant.cl",
+            "category":"web",
+            "projectType": "fictional websites",
+            "description": "This is a Remake of the <a class='text-naranjalink hover:text-naranjad dark:text-naranjal' href='https://www.ironplant.cl/' target='_blank' >Ironplant website</a>, a Vegan brand selling food supplements. I did this site for the final project of the React Js bootcamp at Coderhouse, where I learned a lot of my Web Development Skills. In this project you can actually simulate a purchase, it has itemlists, filtered items, item details, cart and a checkout form.",
+            "descriptionES": "Remake the la página <a class='text-naranjalink hover:text-naranjad dark:text-naranjal' href='https://www.ironplant.cl/' target='_blank' >Ironplant.cl</a>, una marca vegana de suplementos alimenticios. Hice este sitio para el proyecto final del bootcamp de React JS en Coderhouse, donde aprendí gran parte de mis habilidades como desarrollador. En este proyecto podrás simular una compra, con su lista de ítems, filtros de búsqueda, detalle de producto, carrito de compras y finalmente el formulario para el Checkout.",
+            "opinion": "Don't forget your B12!",
+            "opinionES": "Tómate la B12",
+            "images": [
+                "/imagecarousel/ironplant1.png",
+                "/imagecarousel/ironplant2.png",
+                "/imagecarousel/ironplant3mobile.png",
+                "/imagecarousel/ironplant4mobile.png"
+            ],
+            "imagesmobile": [
+                "/imagecarousel/ironplantmobile1.jpg",
+                "/imagecarousel/ironplantmobile2.jpg"
+            ],
+            "illustrations": "/illustrations/rana2.png",
+            "github": "https://github.com/Caracolaracol/ReactJsFinal-coderhouse",
+            "link": "https://reactjsfinal-coderhouse.vercel.app/",
+            "technologies": [
+                {
+                    "idtech": "react",
+                    "name": "React JS",
+                    "img": "/icons/react.svg",
+                    "description": "ReactJs: One library to rule them all"
+                },
+                {
+                    "idtech": "mui",
+                    "name": "MateriaUI",
+                    "img": "/icons/mui.svg",
+                    "description": "MaterialUI: Some components made with mui. It's faster"
+                },
+                {
+                    "idtech": "firebase",
+                    "name": "Firebase",
+                    "img": "/icons/firebase.svg",
+                    "description": "Firebase: The database of products and customers are located here"
+                }
+            ]
+        }
+    ],
+    "apps": [
+        {
+            "id": "torchnd",
+            "name": "Torchnd",
+            "nameES": "Torchnd",
+            "projectType": "apps",
+            "category":"apps",
+            "description": "Torchnd is basically a booking app, but with fictional places and hosts. For the development of the app I used expo and it works on Android and iOS. This booking app has been gamifing with the creative and fast help of ChatGPT and LeonardoAI.",
+            "descriptionES": "",
+            "opinion": "",
+            "opinionES": "",
+            "images": [
+                "/imagecarousel/torchnd01bigmobile.png",
+                "/imagecarousel/torchnd05bigmobile.png",
+                "/imagecarousel/torchnd03bigmobile.png",
+                "/imagecarousel/torchnd04bigmobile.png"
+            ],
+            "imagesmobile": [
+                "/imagecarousel/portfoliov21mobile.jpg",
+                "/imagecarousel/portfoliov22mobile.jpg"
+            ],
+            "illustrations": "/illustrations/caracoltecla.png",
+            "github": "https://github.com/Caracolaracol/my-portfolio",
+            "link": "https://caracolaracol-portfolio.vercel.app/",
+            "technologies": [
+                {
+                    "idtech": "expo",
+                    "name": "Expo",
+                    "img": "/icons/expo.svg",
+                    "description": "Expo: React Native Toolkit for creating apps"
+                },
+                {
+                    "idtech": "redux",
+                    "name": "Redux",
+                    "img": "/icons/redux.svg",
+                    "description": "State management"
+                },
+                {
+                    "idtech": "firebase",
+                    "name": "Firebase",
+                    "img": "/icons/firebase.svg",
+                    "description": "Auth & Realtime database system"
+                },
+                {
+                    "idtech": "sqlite",
+                    "name": "SQLite",
+                    "img": "/icons/sqlite.svg",
+                    "description": "Offline features"
+                }
+            ]
+        },
+        {
+            "id": "giftoky",
+            "name": "Giftoky",
+            "nameES": "Giftoky",
+            "projectType": "apps",
+            "category":"apps",
+            "description": "Torchnd is basically a booking app, but with fictional places and hosts. For the development of the app I used expo and it works on Android and iOS. This booking app has been gamifing with the creative and fast help of ChatGPT and LeonardoAI.",
+            "descriptionES": "",
+            "opinion": "",
+            "opinionES": "",
+            "images": [
+                "/imagecarousel/torchnd01bigmobile.png",
+                "/imagecarousel/torchnd05bigmobile.png",
+                "/imagecarousel/torchnd03bigmobile.png",
+                "/imagecarousel/torchnd04bigmobile.png"
+            ],
+            "imagesmobile": [
+                "/imagecarousel/portfoliov21mobile.jpg",
+                "/imagecarousel/portfoliov22mobile.jpg"
+            ],
+            "illustrations": "/illustrations/caracoltecla.png",
+            "github": "https://github.com/Caracolaracol/my-portfolio",
+            "link": "https://caracolaracol-portfolio.vercel.app/",
+            "technologies": [
+                {
+                    "idtech": "expo",
+                    "name": "Expo",
+                    "img": "/icons/expo.svg",
+                    "description": "Expo: React Native Toolkit for creating apps"
+                },
+                {
+                    "idtech": "redux",
+                    "name": "Redux",
+                    "img": "/icons/redux.svg",
+                    "description": "State management"
+                },
+                {
+                    "idtech": "firebase",
+                    "name": "Firebase",
+                    "img": "/icons/firebase.svg",
+                    "description": "Auth & Realtime database system"
+                },
+                {
+                    "idtech": "sqlite",
+                    "name": "SQLite",
+                    "img": "/icons/sqlite.svg",
+                    "description": "Offline features"
+                }
+            ]
+        }
+    ],
+    "videos": [
+        {
+            "id": "bichos",
+            "name": "Bichos",
+            "projectType": "Videos",
+            "category":"videos",
+            "description": "This is a music video I made for the band Bichonauta, with bugs nature and destruction. The main idea behind was to make a videocollage made with book clippings and use the illustrations of old books about nature and entomology. This took me 2 years of uninterrupted research and editing of the illustrations. Maybe the main source of those illustrations was the <a class='text-naranjalink hover:text-naranjad dark:text-naranjal' href='https://obsidian.md/' target='_blank' >Biodiversity Heritage Library</a>. In adition all these illustrations were animated in After Effects.",
+            "descriptionES": "Video musical hecho para la banda Bichonauta, con bichos, naturaleza y destrucción. La idea principal fué hacer un videocollage hecho con ilustraciones mías y recortes de libros viejos sobre naturaleza y entomología. Me tomó 2 años de investigación y posterior edición de los recortes antes de comenzar con la animación. La mayoría de las plantas y bichos provienen de la <a class='text-naranjalink hover:text-naranjad dark:text-naranjal' href='https://obsidian.md/' target='_blank' >Biodiversity Heritage Library</a>. Luego animé los recortes con After Effects. ",
+            "opinion": "One of the hardest works i've done, really dificult to make this video.",
+            "opinionES": "Uno de los trabajos más difíciles que he realizado.",
+            "images": [
+                "/imagecarousel/obsidianimage1.png",
+                "/imagecarousel/obsidianimage2.png"
+            ],
+            "video": "kn46FRoGDuk",
+            "technologies": [
+                {
+                    "idtech": "photoshop",
+                    "name": "Adobe Photoshop",
+                    "img": "/icons/photoshop.svg",
+                    "description": "For Cutting and editing all the layers"
+                },
+                {
+                    "idtech": "aftereffects",
+                    "name": "Adobe After Effects",
+                    "img": "/icons/aftereffects.svg",
+                    "description": "'There is a lot of after effects inside your after effects'"
+                },
+                {
+                    "idtech": "finalcut",
+                    "name": "Final Cut",
+                    "img": "/icons/finalcut.png",
+                    "description": "The video editing"
+                },
+                {
+                    "idtech": "drawingtablet",
+                    "name": "Drawing Tablet",
+                    "img": "/icons/tablet.svg",
+                    "description": "I edited and paint some bugs with a graphic tablet"
+                },
+                {
+                    "idtech": "javascript",
+                    "name": "Javascript",
+                    "img": "/icons/javascript.svg",
+                    "description": "There is some Javascript expressions for the animations"
+                }
+            ]
+        },
+        {
+            "id": "cruzandorios",
+            "name": "Cruzando Ríos/Saltando Piedras",
+            "projectType": "Videos",
+            "category":"videos",
+            "description": "This is the first music video I made for the band Bichonauta, made with my friends through a journey to 'El Manzano' an incredible place full of nature. I did the video editing and some camera too. The little friend was handmade by another little friend",
+            "descriptionES": "Este es el primer video musical que hice para la banda Bichonauta, hecho con mis amixs durante un viaje al Manzano, un bello lugar lleno de naturaleza. Hice la edición y algo de cámara también. El amiguito fue hecho a mano por otro amiguito.",
+            "images": [
+                "/imagecarousel/obsidianimage1.png",
+                "/imagecarousel/obsidianimage2.png"
+            ],
+            "video": "5IuzqtMDwCk",
+            "technologies": [
+                {
+                    "idtech": "finalcut",
+                    "name": "Final Cut",
+                    "img": "/icons/finalcut.png",
+                    "description": "The video editing"
+                }
+            ]
+        },
+        {
+            "id": "lacenaestalista",
+            "name": "La cena está lista",
+            "projectType": "Videos",
+            "category":"videos",
+            "description": "Another Music Video I made for Bichonauta filmed in the mountains, where mysterious creatures dwell. This time I try some Stop Motion to generate another perception about these little gnomes. They did a great job as actors in this video, and the little friend too.",
+            "descriptionES": "Otro video musical hecho para Bichonauta, fué grabado en las montañas donde habitan misteriosas criaturas. Esta vez utilicé la tecnica de stop motion para generar una percepcion distinta en las escenas de los gnomos, hicieron un gran trabajo como actores",
+            "images": [
+                "/imagecarousel/obsidianimage1.png",
+                "/imagecarousel/obsidianimage2.png"
+            ],
+            "video": "xFmuDBHP8Uo",
+            "technologies": [
+                {
+                    "idtech": "finalcut",
+                    "name": "Final Cut",
+                    "img": "/icons/finalcut.png",
+                    "description": "The video editing"
+                },
+                {
+                    "idtech": "aftereffects",
+                    "name": "Adobe After Effects",
+                    "img": "/icons/aftereffects.svg",
+                    "description": "'There is a little bit of after effects inside your after effects'"
+                }
+            ]
+        },
+        {
+            "id": "quebradaradiocontrol",
+            "name": "Quebrada Radiocontrol",
+            "projectType": "Videos",
+            "category":"videos",
+            "description": "Quebrada Radiocontrol It's an experimental music group, this is one of the videos we made and it required a lot of work because we filmed at so many places and with so many techniques but the result was worth it.",
+            "descriptionES": "Quebrada Radiocontrol es una banda de música experimental. Este video requirió de mucho trabajo y experimentació, lo grabamos en muchos lugares y con muchas y diversas técnicas.",
+            "images": [
+                "/imagecarousel/obsidianimage1.png",
+                "/imagecarousel/obsidianimage2.png"
+            ],
+            "video": "ORB423zdJy8",
+            "technologies": [
+                {
+                    "idtech": "finalcut",
+                    "name": "Final Cut",
+                    "img": "/icons/finalcut.png",
+                    "description": "The video editing"
+                }
+            ]
+        },
+        {
+            "id": "asambleadejueces",
+            "name": "Asamblea de Jueces",
+            "projectType": "Videos",
+            "category":"videos",
+            "description": "Another video of Quebrada Radiocontrol, a very strange one, Just enjoy.",
+            "descriptionES": "Otro video de Quebrada Radiocontrol, uno muy extraño. ",
+            "images": [
+                "/imagecarousel/obsidianimage1.png",
+                "/imagecarousel/obsidianimage2.png"
+            ],
+            "video": "wxx3oMa7NVk",
+            "technologies": [
+                {
+                    "idtech": "finalcut",
+                    "name": "Final Cut",
+                    "img": "/icons/finalcut.png",
+                    "description": "The video editing"
+                }
+            ]
+        }
+    ],
+    "art": [
+        {
+            "id": "music",
+            "name": "Music Projects",
+            "nameES": "Projectos musicales",
+            "category":"art",
+            "projectType": "Projectos musicales",
+            "description": "",
+            "descriptionES": ""
+        },
+        {
+            "id": "art",
+            "name": "Arts",
+            "nameES": "Artes visuales",
+            "category":"art",
+            "projectType": "Artes Visuales",
+            "description": "",
+            "descriptionES": ""
+        },
+        {
+            "id": "photography",
+            "name": "Macro Photography",
+            "nameES": "Fotografía Macro",
+            "category":"art",
+            "projectType": "Fotografia Macro",
+            "description": "",
+            "descriptionES": ""
+        }
+    ]
+}
